@@ -12,7 +12,6 @@ class Metaocaml < Formula
                           "--mandir", man,
                           "-cc", ENV.cc,
                           "-with-debug-runtime",
-                          "-no-tk",
                           "-aspp", "#{ENV.cc} -c"
     ENV.deparallelize # Builds are not parallel-safe, esp. with many cores
     cd "metalib" do
