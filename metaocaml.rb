@@ -2,7 +2,7 @@ require 'formula'
 
 class Metaocaml < Formula
   homepage 'http://metaocaml.org'
-  head 'https://github.com/metaocaml/ber-metaocaml.git', :branch => 'ber-n102'
+  head 'https://github.com/timxzl/ber-metaocaml.git', :branch => 'ber-n102'
 
   depends_on :x11 if MacOS::X11.installed?
   keg_only "It conflicts with OCaml."
